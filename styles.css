@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+.main {
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+span {
+    margin: 0;
+}
 body,html {
     margin: 0;
     padding: 0;
@@ -27,7 +37,7 @@ body {
 .inputMain {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     width: 32.5rem;
     height: 3rem;
     border: none;
@@ -45,4 +55,8 @@ body {
 
 .textEdit {
     outline: none;
+}
+
+.timer {
+    font-size: 1.5rem;
 }

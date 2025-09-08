@@ -29,6 +29,7 @@ input.addEventListener('blur', () => {
 })
 
 input.addEventListener('input', () => {
+
     /*Changes stuff in the span to dots */
     const inputDisplay = input.textContent;
 
@@ -37,7 +38,7 @@ input.addEventListener('input', () => {
         currentTyped += inputDisplay[inputDisplay.length - 1];
     }
     else if (currentTyped.length > inputDisplay.length) {
-        currentTyped = currentTyped.slice(0,-1);
+        currentTyped = currentTyped.slice(0,inputDisplay.length);
     }
     console.log("Current typed: " + currentTyped);
 
@@ -45,7 +46,7 @@ input.addEventListener('input', () => {
     input.textContent = "•".repeat(input.textContent.length);
     input.style.color = 'rgb(65, 144, 73)';
     if (currentTyped.slice(0, currentTyped.length) !== password.slice(0,currentTyped.length)) {
-        input.style.color = 'rgb(255,0,0)';
+        input.style.color = 'red';
     }
 
     /* Cursor Positioning Section */
