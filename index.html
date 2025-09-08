@@ -14,7 +14,8 @@
     <div class="title">
       <h1 onclick="settings()">SpeedPass</h1>
       <div class="settings" id="mySettings">
-        <input class="inputMain settingsInput" id="setPassword" type="text" placeholder="Type Password Here...">
+        <input autocomplete="off" class="inputMain settingsInput" id="setPassword" type="text" placeholder="Type Password Here...">
+        <button class="button" id="hideShow" onclick="togglePass()">Hide</button>
       </div>
     </div>
     <div class="inputMain" id="mainInputBox">

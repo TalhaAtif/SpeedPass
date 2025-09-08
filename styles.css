@@ -94,3 +94,17 @@ body {
     margin-top: 0;
     box-shadow: none;
 }
+
+.button {
+    background-color: rgb(13, 17, 35);
+    color: white;
+    height: 2rem;
+    border-radius: .5rem;
+    width: 3rem;
+    border: none;
+    margin: 0;
+}
+
+.button:hover{
+    background-color: rgb(34, 44, 90);
+}

@@ -5,6 +5,8 @@ const input = document.querySelector(".textEdit");
 const textDiv = document.getElementById("mainInputBox");
 /** @type {HTMLInputElement} */
 const setPass = document.getElementById("setPassword");
+/** @type {HTMLButtonElement} */
+const hidePass = document.getElementById("hideShow");
 
 const placeholder = "Click here to start..."
 let password = "sample";
@@ -18,9 +20,8 @@ let time = 0;
 /** @type {HTMLSpanElement} */
 const timerBox = document.getElementById("timerVisual");
 
-setPass.addEventListener('input', ()=> {
+setPass.addEventListener('input', () => {
     password = setPass.value;
-    console.log(password);
 })
 input.addEventListener('focus', () => {
 
@@ -121,4 +122,10 @@ function resetInput() {
 function settings() {
     var menu = document.getElementById("mySettings");
     menu.classList.toggle("show");
+}
+
+function togglePass() {
+    setPass.type = setPass.type === "password" ? "text" : "password";
+    hidePass.textContent = hidePass.textContent === "Hide" ? "Show" : "Hide";
+
 }
