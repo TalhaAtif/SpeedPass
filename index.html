@@ -12,12 +12,15 @@
 <body>
   <div class="main">
     <div class="title">
-      <h1>SpeedPass</h1>
+      <h1 onclick="settings()">SpeedPass</h1>
+      <div class="settings" id="mySettings">
+        <input class="inputMain settingsInput" id="setPassword" type="text" placeholder="Type Password Here...">
+      </div>
     </div>
-    <div class="inputMain">
+    <div class="inputMain" id="mainInputBox">
       <span class="textEdit" contenteditable="true">Click here to start...</span>
     </div>
-    <div class="timerBox"><span id="timerVisual" class="timer">test</span></div>
+    <div class="timerBox"><span id="timerVisual" class="timer"></span></div>
   </div>
 </body>
 <script src="app.js"></script>

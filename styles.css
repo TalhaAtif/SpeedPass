@@ -1,4 +1,4 @@
-*{
+* {
     margin: 5px;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,16 +6,18 @@
 }
 
 .main {
-display: flex;
-align-items: center;
-flex-direction: column;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 span {
     margin: 0;
 }
-body,html {
+
+body,
+html {
     margin: 0;
     padding: 0;
 }
@@ -30,8 +32,14 @@ body {
 }
 
 .title h1 {
+    padding-left: 1rem;
     letter-spacing: 1.25rem;
     font-size: 4rem;
+}
+
+.title h1:hover {
+    color: rgb(114, 172, 191);
+    cursor: pointer;
 }
 
 .inputMain {
@@ -42,7 +50,7 @@ body {
     height: 3rem;
     border: none;
     border-radius: 4rem;
-    background-color:#384149;
+    background-color: #384149;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
     padding-left: 2rem;
     padding-right: 2rem;
@@ -59,4 +67,30 @@ body {
 
 .timer {
     font-size: 1.5rem;
+}
+
+.settings {
+    padding-left: 1rem;
+    visibility: hidden;
+    width: 34.5rem;
+    height: 5rem;
+    background-color: #214968;
+    position: fixed;
+    z-index: 1;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    visibility: visible;
+}
+
+.settingsInput {
+    height: 2rem;
+    background-color: #11334e;
+    margin-top: 0;
+    box-shadow: none;
 }
